@@ -3,7 +3,7 @@ import csv
 from bs4 import BeautifulSoup
 import requests
 
-soup = BeautifulSoup(open("AppAnnie_iOS_Games_500_US.html"))
+soup = BeautifulSoup(open("sample.html"))
 
 paid_apps = soup.findAll('td',{'class':'app paid no_iap'}) 
 free_apps = soup.findAll('td',{'class':'app free no_iap'}) 
